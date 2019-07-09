@@ -18,7 +18,7 @@ app.get('/contacts/:id', controller.getContactById);
 
 app.delete('/contacts/:id', controller.deleteContact);
 
-let server = app.listen(8080, function () {
+let server = app.listen(3000, function () {
    let port = server.address().port
    console.log("Listening at port %s", port)
 })

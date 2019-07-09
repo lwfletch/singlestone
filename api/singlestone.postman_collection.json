@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "5946dea3-7947-4d51-bd37-ec8e0b85078c",
+		"name": "singlestone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/contacts/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/contacts/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "GET all contacts"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/contacts/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":{\n\t\t\"first\": \"Trey\",\n\t\t\"last\" : \"Fletcher\"\n\t},\n\t\"address\": {\n\t\t\"street\": \"5616 Purnell Rd\",\n\t\t\"city\": \"Wake Forest\",\n\t\t\"state\": \"North Carolina\",\n\t\t\"zip\" : \"27587\"\n\t},\n\t\"phone\" : {\n\t\t\"number\" : \"919-688-3950\",\n\t\t\"type\" : \"cell\"\n\t},\n\t\"email\": \"extremejv@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/contacts/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "POST new contact"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/contacts/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/contacts/5d2411a40dda7447781a8902",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"5d2411a40dda7447781a8902"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "GET single contact from id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/contacts/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":{\n\t\t\"first\": \"Trey\",\n\t\t\"last\" : \"Fletcher\"\n\t},\n\t\"address\": {\n\t\t\"street\": \"5616 Purnell Rd\",\n\t\t\"city\": \"Wake Forest\",\n\t\t\"state\": \"North Carolina\",\n\t\t\"zip\" : \"27587\"\n\t},\n\t\"phone\" : {\n\t\t\"number\" : \"919-824-4723\",\n\t\t\"type\" : \"cell\"\n\t},\n\t\"email\": \"treyfletcher612@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/contacts/5d2411a40dda7447781a8902",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"5d2411a40dda7447781a8902"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "PUT update a contact"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/contacts/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":{\n\t\t\"first\": \"Trey\",\n\t\t\"last\" : \"Fletcher\"\n\t},\n\t\"address\": {\n\t\t\"street\": \"5616 Purnell Rd\",\n\t\t\"city\": \"Wake Forest\",\n\t\t\"state\": \"North Carolina\",\n\t\t\"zip\" : \"27587\"\n\t},\n\t\"phone\" : {\n\t\t\"number\" : \"919-824-4723\",\n\t\t\"type\" : \"cell\"\n\t},\n\t\"email\": \"treyfletcher612@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/contacts/5d2411a40dda7447781a8902",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"contacts",
+						"5d2411a40dda7447781a8902"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				},
+				"description": "DELETE a single contact based on id"
+			},
+			"response": []
+		}
+	]
+}
