@@ -1,0 +1,30 @@
+{
+  "name": "contact_api",
+  "version": "1.0.0",
+  "description": "a NodeJs REST api for contacts",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwfletch/singlestone.git"
+  },
+  "author": "Trey Fletcher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwfletch/singlestone/issues"
+  },
+  "homepage": "https://github.com/lwfletch/singlestone#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "supertest": "^4.0.2"
+  }
+}
